@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <img class="layer-1" src="bg.png" alt="" />
+      <img class="layer-2" src="meteor.png" alt="" />
+
+      <div class="layer-3">
+        <h1>Hello and Welcome</h1>
+        <p>
+          My self Anuj Mishra and i am a
+          <span id="element"></span> 
+        </p>
+        <a href="#teks">Get Started</a>
+      </div>
+
+      <img class="layer-4" src="4.png" alt="" />
+      <img class="layer-5" src="5.png" alt="" />
+      <img src="6.png" alt="" />
+    </div>
+
+    <div class="content" id="teks">
+      <h1>My Journey</h1>
+      <p>
+       My self ANUJ MISHRA i am a Frontent developer ,App developer and Teacher this three  are my present skill
+
+      </p>
+      <p>How i am start coding .My journey start at 11th standard in which i choose IP subject in this i am start to learn about the basics of the python and also in 12th standard the intermidiate section of Python i will be learn but i cannot completly learn the python language after 12th i will learn python throught udemy in this course i will be make some project  </p>
+
+
+      <p >
+       WEB DEVELOPMENT
+       I will start web development in college in web development i will learn HTML , CSS , JAVASCRIPT, MERN STACK this all are learn from the udemy tutor name angela yu .In this i will learn vanella css ,bootstrap frame work for improve the speed of code
+         </p>
+
+
+      <p>
+        APP DEVELOPMENT
+        I WILL learn App Development throught udemy i will learn Hybrid app development with the help of React-Native .By this JAVASCRIPT framework we will make Hybrid Apps  on both platform Android as well IOS 
+      </p>
+
+      <p>
+        Teaching
+        I will teach kids in my society or my niehbourhoods when i am in 8th class .After that i am start to teach 10th class student in 10th class and carryon on 11th and 12th class also after that i will teach student for competitive exam like nda, airforce etc  math subject .And finnaly after all of that i will start to teach coding .
+
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      let layer_1 = document.querySelector(".layer-1");
+      let layer_2 = document.querySelector(".layer-2");
+      let layer_3 = document.querySelector(".layer-3");
+      let layer_4 = document.querySelector(".layer-4");
+      let layer_5 = document.querySelector(".layer-5");
+
+      window.onscroll = function () {
+        let Y = window.scrollY;
+
+        layer_1.style.transform = "translateY(" + Y / 1.5 + "px)";
+        layer_2.style.transform = "translateY(" + Y / 2 + "px)";
+        layer_3.style.transform = "translateY(" + Y / 1 + "px)";
+        layer_4.style.transform = "translateY(" + Y / 2 + "px)";
+        layer_5.style.transform = "translateY(" + Y / 3 + "px)";
+      };
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed("#element", {
+        strings: ["Frontent Developer", "App Developer","Teacher",],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+   
+    
+  </body>
+</html>
